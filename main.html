@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>LZ77</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>LZ77</h1>
+
+    <div class="container">
+        <div class="block">
+            <label for="inputCompress">Введите текст для сжатия:</label>
+            <textarea id="inputCompress" rows="5"></textarea>
+            <button onclick="compressString()">Сжать</button>
+        </div>
+
+        <div class="block">
+            <label for="inputDecompress">Введите текст для разжатия:</label>
+            <textarea id="inputDecompress" rows="5"></textarea>
+            <button onclick="decompressString()">Разжать</button>
+        </div>
+
+        <div class="block">
+            <label>Результат:</label>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="scrypt.js"></script>
+</body>
+</html>
